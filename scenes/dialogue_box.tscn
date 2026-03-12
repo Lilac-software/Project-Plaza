@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://dusjb3pnvf3wg"]
+
+[ext_resource type="Script" uid="uid://crul7tm8exse2" path="res://scripts/dialogue_player.gd" id="1_7a7k6"]
+[ext_resource type="Texture2D" uid="uid://bbv64dil18wwn" path="res://2D assets/dialogue_box.png" id="1_8bx1c"]
+[ext_resource type="Theme" uid="uid://dc68jboxs2jiw" path="res://themes/new_theme.tres" id="3_tm68y"]
+
+[node name="DialogueBox" type="CanvasLayer" unique_id=1988278974]
+script = ExtResource("1_7a7k6")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1562652561]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -480.0
+offset_top = -324.0
+offset_right = 480.0
+offset_bottom = -79.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_8bx1c")
+patch_margin_left = 9
+patch_margin_top = 9
+patch_margin_right = 9
+patch_margin_bottom = 9
+
+[node name="Panel" type="Panel" parent="NinePatchRect" unique_id=1573340053]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -31.0
+offset_top = -1.0
+offset_right = -31.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_tm68y")
+
+[node name="Panel2" type="Panel" parent="NinePatchRect" unique_id=1682064839]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -12.0
+offset_top = -60.0
+offset_right = -622.0
+offset_bottom = -192.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_tm68y")
+
+[node name="NameText" type="RichTextLabel" parent="NinePatchRect/Panel2" unique_id=1570763503]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 13.0
+offset_right = 343.0
+offset_bottom = 113.0
+theme_override_colors/default_color = Color(0.2784314, 0.40784314, 0.49019608, 1)
+theme_override_font_sizes/normal_font_size = 51
+text = "Name here"
+horizontal_alignment = 1
+
+[node name="DialogueText" type="RichTextLabel" parent="NinePatchRect" unique_id=1955242228]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 68.0
+offset_right = 873.0
+offset_bottom = 192.0
+theme_override_colors/default_color = Color(0.2784314, 0.40784314, 0.49019608, 1)
+theme_override_font_sizes/normal_font_size = 36
+text = "Placeholder, testing testing testing test testing test testing this is dialogue testing test test"
+
+[node name="Timer" type="Timer" parent="." unique_id=538979407]
+wait_time = 0.174
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

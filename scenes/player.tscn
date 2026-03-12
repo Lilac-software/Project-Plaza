@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://csm6quk0q2h7h"]
+
+[ext_resource type="Script" uid="uid://ctficqvb5iwoi" path="res://scripts/player.gd" id="1_liamc"]
+[ext_resource type="PackedScene" uid="uid://b1bt64t8vj876" path="res://scenes/playerskin.tscn" id="3_l3n0o"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2xth6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u4r4a"]
+albedo_color = Color(0.707657, 0.343186, 0.526234, 1)
+roughness = 0.37
+clearcoat = 0.21
+clearcoat_roughness = 0.2
+ao_light_affect = 0.36
+heightmap_scale = -1.33
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_sxgy2"]
+material = SubResource("StandardMaterial3D_u4r4a")
+
+[sub_resource type="PrismMesh" id="PrismMesh_g2els"]
+size = Vector3(0.51, 1.22, 0.175)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_45att"]
+
+[node name="Player" type="CharacterBody3D" unique_id=1556047462]
+collision_layer = 5
+collision_mask = 5
+script = ExtResource("1_liamc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2142677110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+visible = false
+shape = SubResource("CapsuleShape3D_2xth6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=201841219]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+visible = false
+mesh = SubResource("CapsuleMesh_sxgy2")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1581584476]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.513, 0)
+visible = false
+mesh = SubResource("PrismMesh_g2els")
+
+[node name="CharacterSkin" parent="." unique_id=1779186565 instance=ExtResource("3_l3n0o")]
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1622020526]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.65189, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=994732819]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+collision_mask = 7
+shape = SubResource("SphereShape3D_45att")
+spring_length = 3.0
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=2103717240]
+current = true
+size = 3.857

@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://6j06dpmehcve"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a6vng"]
+
+[resource]
+Label/styles/normal = SubResource("StyleBoxFlat_a6vng")

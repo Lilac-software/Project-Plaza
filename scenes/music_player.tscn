@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b38uq6f80r20k"]
+
+[ext_resource type="AudioStream" uid="uid://cucbg5h02p67q" path="res://audio/music/Beam of Sunlight (WIP 2025-06-26).mp3" id="1_jxdhu"]
+
+[node name="MusicPlayer" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_jxdhu")
+volume_db = -7.038
+parameters/looping = true

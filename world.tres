@@ -1,0 +1,61 @@
+[gd_resource type="Environment" format=3 uid="uid://bgqgepjck3nr7"]
+
+[sub_resource type="Gradient" id="Gradient_dbpwn"]
+offsets = PackedFloat32Array(0, 0.21666667, 0.882023, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.0984, 0.084, 0.12, 1, 1, 0.992, 0.88, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_mu5wb"]
+gradient = SubResource("Gradient_dbpwn")
+
+[sub_resource type="Gradient" id="Gradient_kko2o"]
+offsets = PackedFloat32Array(0.246667, 0.353333, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_dbpwn"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_mu5wb"]
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_dbpwn")
+color_ramp = SubResource("Gradient_kko2o")
+seamless = true
+in_3d_space = true
+seamless_blend_skirt = 1.0
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_po8ig"]
+sky_top_color = Color(0.247, 0.539917, 0.95, 1)
+sky_horizon_color = Color(0.4824, 0.554313, 0.67, 1)
+sky_curve = 0.243676
+sky_cover = SubResource("NoiseTexture2D_mu5wb")
+ground_bottom_color = Color(0, 0.3116668, 0.85, 1)
+ground_horizon_color = Color(0.2752, 0.5188667, 0.86, 1)
+ground_curve = 0.026390232
+
+[sub_resource type="Sky" id="Sky_s6s3b"]
+sky_material = SubResource("ProceduralSkyMaterial_po8ig")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_s6s3b")
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_sky_contribution = 0.19
+tonemap_mode = 3
+tonemap_white = 4.25
+ssao_radius = 9.25
+ssao_intensity = 2.34
+sdfgi_read_sky_light = false
+sdfgi_y_scale = 2
+sdfgi_energy = 2.63
+sdfgi_probe_bias = 4.5
+fog_light_energy = 1.41
+fog_density = 0.005
+fog_height = 2.0
+fog_height_density = 0.547
+volumetric_fog_density = 0.01
+volumetric_fog_albedo = Color(0.79, 0.895, 1, 1)
+volumetric_fog_emission = Color(0.66, 0.66, 0.66, 1)
+volumetric_fog_emission_energy = 0.1
+volumetric_fog_ambient_inject = 0.12
+volumetric_fog_sky_affect = 0.053
+volumetric_fog_temporal_reprojection_enabled = false
+adjustment_color_correction = SubResource("GradientTexture1D_mu5wb")

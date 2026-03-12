@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cucbg5h02p67q"
+path="res://.godot/imported/Beam of Sunlight (WIP 2025-06-26).mp3-9701aeca5c165fe8b1b62db5ddd5fb5b.mp3str"
+
+[deps]
+
+source_file="res://audio/music/Beam of Sunlight (WIP 2025-06-26).mp3"
+dest_files=["res://.godot/imported/Beam of Sunlight (WIP 2025-06-26).mp3-9701aeca5c165fe8b1b62db5ddd5fb5b.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.01
+bpm=145.0
+beat_count=32
+bar_beats=4
