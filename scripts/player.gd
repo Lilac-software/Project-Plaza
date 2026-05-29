@@ -35,7 +35,11 @@ func _physics_process(delta: float) -> void:
 		pass
 	else : character.get_node("AnimationPlayer").play("Idle")
 	
+	var prev_velocity: Vector3 = velocity
 	velocity = movement * speed # Vector3(direction.y*speed,0,direction.x*speed)
+	if is_on_floor() == false:
+		prev_velocity.y -= 0.2
+		velocity.y = prev_velocity.y
 	$CharacterSkin.rotation.y = -facing.angle() + PI/2
 	$MeshInstance3D2.rotation.y = -facing.angle() + PI/2
 	move_and_slide()
