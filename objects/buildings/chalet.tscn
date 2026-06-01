@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://rt4b8c2e1b6c"]
+
+[ext_resource type="PackedScene" uid="uid://b3ooomq7gg6gg" path="res://3D assets/models/Chalet/V1/chalet.blend" id="1_au1kv"]
+[ext_resource type="Texture2D" uid="uid://majpa5gcnr34" path="res://3D assets/models/textures/Chalet/test.jpg" id="2_qywid"]
+[ext_resource type="Texture2D" uid="uid://cbgsg3xe3cn1e" path="res://3D assets/models/textures/Chalet/Bois2.jpg" id="3_g8w8i"]
+[ext_resource type="Texture2D" uid="uid://br87lx2k4e4yn" path="res://3D assets/models/textures/Chalet/Fenetre.jpg" id="4_g8w8i"]
+[ext_resource type="Texture2D" uid="uid://bi8ci60k1suox" path="res://3D assets/models/textures/Chalet/Porte.jpg" id="4_qywid"]
+[ext_resource type="Texture2D" uid="uid://cc2tbnrkoieq6" path="res://3D assets/models/textures/Chalet/Chemine.jpg" id="6_kev3k"]
+[ext_resource type="Texture2D" uid="uid://cvc3evw5hwosx" path="res://3D assets/models/textures/Chalet/Wall_paper.jpg" id="6_wuuln"]
+[ext_resource type="Texture2D" uid="uid://rob88bnj1dfx" path="res://3D assets/models/textures/Chalet/Toit.jpg" id="6_xenjn"]
+[ext_resource type="Texture2D" uid="uid://8gv1vq8tvgjb" path="res://3D assets/models/textures/Chalet/Plancher.jpg" id="7_gk4x1"]
+[ext_resource type="Texture2D" uid="uid://cejonsxmkjc4r" path="res://3D assets/models/textures/Chalet/Chaise1.jpg" id="8_ofmk6"]
+[ext_resource type="Texture2D" uid="uid://cilgrl0hrbent" path="res://3D assets/models/textures/Chalet/Peinture.jpg" id="10_gk4x1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wyyft"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("2_qywid")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kev3k"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("3_g8w8i")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ofmk6"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("4_g8w8i")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g8w8i"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("4_qywid")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hll6f"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("6_wuuln")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_efa5v"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("7_gk4x1")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wuuln"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("6_kev3k")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8anr0"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("8_ofmk6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jdrrs"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("10_gk4x1")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i4wy2"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("6_xenjn")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gk4x1"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("8_ofmk6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sftv3"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("8_ofmk6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l627o"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("8_ofmk6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pwa51"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("8_ofmk6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_53val"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("8_ofmk6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xboe4"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("8_ofmk6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_emuop"]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("8_ofmk6")
+
+[node name="chalet" unique_id=1913971421 instance=ExtResource("1_au1kv")]
+
+[node name="Cylinder" parent="." index="0" unique_id=1572744058]
+transform = Transform3D(0.96124935, 0, 0, 0, 1, 0, 0, 0, 1, -0.017719269, 0.06549454, -0.02470398)
+surface_material_override/0 = SubResource("StandardMaterial3D_wyyft")
+
+[node name="Cylinder_002" parent="." index="1" unique_id=1223151422]
+surface_material_override/0 = SubResource("StandardMaterial3D_kev3k")
+
+[node name="Torus" parent="." index="2" unique_id=1825977784]
+surface_material_override/0 = SubResource("StandardMaterial3D_ofmk6")
+
+[node name="Cube" parent="." index="3" unique_id=495927472]
+surface_material_override/0 = SubResource("StandardMaterial3D_g8w8i")
+
+[node name="Cube_001" parent="." index="4" unique_id=884354349]
+transform = Transform3D(12.233947, 0, 0, 0, 7.9662905, 0, 0, 0, 10.456701, -0.0015656948, 8.55963, -0.0024206638)
+surface_material_override/0 = SubResource("StandardMaterial3D_hll6f")
+
+[node name="Cube_002" parent="." index="5" unique_id=1424390595]
+surface_material_override/0 = SubResource("StandardMaterial3D_efa5v")
+
+[node name="Cube_003" parent="." index="6" unique_id=2015744998]
+transform = Transform3D(3.825497, 0, 0, 0, 1, 0, 0, 0, 1.6815856, 0.006573677, 1.6062241, -8.8968725)
+surface_material_override/0 = SubResource("StandardMaterial3D_wuuln")
+
+[node name="Torus_002" parent="." index="7" unique_id=809564342]
+surface_material_override/0 = SubResource("StandardMaterial3D_8anr0")
+
+[node name="Torus_001" parent="." index="8" unique_id=1196906757]
+surface_material_override/0 = SubResource("StandardMaterial3D_jdrrs")
+
+[node name="Cube_004" parent="." index="9" unique_id=1934347737]
+surface_material_override/0 = SubResource("StandardMaterial3D_i4wy2")
+
+[node name="Seat" parent="." index="10" unique_id=812360501]
+surface_material_override/0 = SubResource("StandardMaterial3D_gk4x1")
+
+[node name="Arm Spindles" parent="Seat" index="0" unique_id=26814084]
+surface_material_override/0 = SubResource("StandardMaterial3D_sftv3")
+
+[node name="Arms" parent="Seat" index="1" unique_id=225002544]
+surface_material_override/0 = SubResource("StandardMaterial3D_l627o")
+
+[node name="Back Spindles" parent="Seat" index="2" unique_id=248874826]
+surface_material_override/0 = SubResource("StandardMaterial3D_pwa51")
+
+[node name="Legs" parent="Seat" index="3" unique_id=1539787888]
+surface_material_override/0 = SubResource("StandardMaterial3D_53val")
+
+[node name="Rail" parent="Seat" index="4" unique_id=55891273]
+surface_material_override/0 = SubResource("StandardMaterial3D_xboe4")
+
+[node name="Rockers" parent="Seat" index="5" unique_id=1394105038]
+surface_material_override/0 = SubResource("StandardMaterial3D_emuop")

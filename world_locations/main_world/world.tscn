@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://dpfwwaspj3r4q" path="res://placeholders/stylized_nature_megapack/glTF/CommonTree_2.gltf" id="20_6okgs"]
 [ext_resource type="PackedScene" uid="uid://dof8s33ygvdsh" path="res://placeholders/stylized_nature_megapack/glTF/CommonTree_4.gltf" id="21_bhnpu"]
 [ext_resource type="PackedScene" uid="uid://dfh6hw0ph06fw" path="res://objects/buildings/cabin.glb" id="22_reurv"]
+[ext_resource type="PackedScene" uid="uid://rt4b8c2e1b6c" path="res://objects/buildings/chalet.tscn" id="23_hpart"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_hw62u"]
 
@@ -464,3 +465,6 @@ visible = false
 
 [node name="cabin" parent="." unique_id=1898868674 instance=ExtResource("22_reurv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.701777, 0.027175188, 13.520252)
+
+[node name="chalet" parent="." unique_id=1913971421 instance=ExtResource("23_hpart")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.039116, 16.31957, 5.642582)

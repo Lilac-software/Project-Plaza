@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8gv1vq8tvgjb"
-path.s3tc="res://.godot/imported/Plancher.jpg-090fde979c4a2acb1883d5005436d056.s3tc.ctex"
+uid="uid://br87lx2k4e4yn"
+path.s3tc="res://.godot/imported/Fenetre.jpg-431fade72f94639f15e9f2438f111e40.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://3D assets/models/textures/Chalet/Plancher.jpg"
-dest_files=["res://.godot/imported/Plancher.jpg-090fde979c4a2acb1883d5005436d056.s3tc.ctex"]
+source_file="res://3D assets/models/textures/Chalet/Fenetre.jpg"
+dest_files=["res://.godot/imported/Fenetre.jpg-431fade72f94639f15e9f2438f111e40.s3tc.ctex"]
 
 [params]
 
