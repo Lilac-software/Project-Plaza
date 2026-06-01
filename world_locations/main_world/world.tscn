@@ -11,7 +11,7 @@
 [ext_resource type="Script" uid="uid://ebjrmosa0k2y" path="res://entities/player/camera/fixedcam.gd" id="9_ovvcw"]
 [ext_resource type="PackedScene" uid="uid://dk4gvrs06rduo" path="res://entities/NPC/test_npc.tscn" id="10_v1wfb"]
 [ext_resource type="Script" uid="uid://bm4lpujj3dcdq" path="res://entities/player/camera/camera.gd" id="11_b4wg8"]
-[ext_resource type="Environment" uid="uid://bgqgepjck3nr7" path="res://shaders/world_environment/world.tres" id="12_yt4x1"]
+[ext_resource type="Environment" uid="uid://b6pfxvajpliwh" path="res://shaders/world_environment/worldcopy.tres" id="12_iadcn"]
 [ext_resource type="PackedScene" uid="uid://dv5p3wmxj5hja" path="res://ui/main_ui.tscn" id="13_dklay"]
 [ext_resource type="PackedScene" uid="uid://u3pak6levfbk" path="res://placeholders/psx_trees/Trees.fbx" id="14_08v81"]
 [ext_resource type="PackedScene" uid="uid://dwktl6urmp84s" path="res://placeholders/stylized_nature_megapack/glTF/Pine_1.gltf" id="15_akghf"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://dpfwwaspj3r4q" path="res://placeholders/stylized_nature_megapack/glTF/CommonTree_2.gltf" id="20_6okgs"]
 [ext_resource type="PackedScene" uid="uid://dof8s33ygvdsh" path="res://placeholders/stylized_nature_megapack/glTF/CommonTree_4.gltf" id="21_bhnpu"]
 [ext_resource type="PackedScene" uid="uid://dfh6hw0ph06fw" path="res://objects/buildings/cabin.glb" id="22_reurv"]
+[ext_resource type="Texture2D" uid="uid://6i50t61ene1" path="res://placeholders/skyboxtest.jpg" id="23_hpart"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_hw62u"]
 
@@ -178,6 +179,61 @@ rings = 0
 metallic = 1.0
 roughness = 0.1
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l8bgr"]
+cull_mode = 1
+shading_mode = 0
+albedo_texture = ExtResource("23_hpart")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_l61nf"]
+material = SubResource("StandardMaterial3D_l8bgr")
+top_radius = 500.0
+bottom_radius = 500.0
+height = 1000.0
+cap_top = false
+cap_bottom = false
+
+[sub_resource type="Curve" id="Curve_hpart"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.24669604, 1), 0.0, 0.0, 0, 0, Vector2(0.65638775, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_l8bgr"]
+curve = SubResource("Curve_hpart")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hpart"]
+emission_shape_scale = Vector3(9.38, 1, 10.37)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+gravity = Vector3(0, -0.855, 0)
+alpha_curve = SubResource("CurveTexture_l8bgr")
+turbulence_enabled = true
+turbulence_noise_strength = 2.55
+turbulence_noise_scale = 2.557
+
+[sub_resource type="Gradient" id="Gradient_l8bgr"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0, 0.52682924, 0.6878049)
+colors = PackedColorArray(0.85, 0.85, 0.85, 1, 0.66, 0.66, 0.66, 0.27058825, 0.53, 0.53, 0.53, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_l61nf"]
+gradient = SubResource("Gradient_l8bgr")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e2t8g"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(1, 1, 1, 0.21568628)
+albedo_texture = SubResource("GradientTexture2D_l61nf")
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_5qacs"]
+material = SubResource("StandardMaterial3D_e2t8g")
+size = Vector2(0.05, 0.05)
+
 [node name="Main" type="Node3D" unique_id=1833213351]
 
 [node name="World" type="Node3D" parent="." unique_id=1657534057]
@@ -321,6 +377,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.93316, 0.0170522, 0.177497
 
 [node name="Water" type="MeshInstance3D" parent="World" unique_id=1446676110]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 21.363121, -1.4872972, 132.29713)
+visible = false
 sorting_offset = 32.96
 mesh = SubResource("PlaneMesh_q5onr")
 skeleton = NodePath("../..")
@@ -399,7 +456,7 @@ directional_shadow_blend_splits = true
 directional_shadow_max_distance = 170.7
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1399300997]
-environment = ExtResource("12_yt4x1")
+environment = ExtResource("12_iadcn")
 
 [node name="ReflectiveSphere" type="MeshInstance3D" parent="." unique_id=251834357]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2655456, 2.35334, 5.56318)
@@ -407,24 +464,6 @@ mesh = SubResource("SphereMesh_w7kh3")
 surface_material_override/0 = SubResource("StandardMaterial3D_jhx03")
 
 [node name="Control" parent="." unique_id=2008118421 instance=ExtResource("13_dklay")]
-
-[node name="Trees" parent="." unique_id=1054076433 instance=ExtResource("14_08v81")]
-transform = Transform3D(0.5701258, 0, -0.8215574, 0, 1, 0, 0.8215574, 0, 0.5701258, -5.9880066, 0.006845951, -32.932724)
-
-[node name="Trees" parent="Trees" unique_id=756523687 instance=ExtResource("14_08v81")]
-transform = Transform3D(0.2002913, 0, -0.9797363, 0, 1, 0, 0.9797363, 0, 0.2002913, 3.2648468, 0.0068478584, 0.5400276)
-
-[node name="Trees" parent="Trees/Trees" unique_id=1381886998 instance=ExtResource("14_08v81")]
-transform = Transform3D(0.999846, 0, 0.01753959, 0, 1, 0, -0.01753959, 0, 0.999846, 15.861291, 0.0068478584, 0.34756088)
-
-[node name="Trees" parent="Trees/Trees/Trees" unique_id=560549007 instance=ExtResource("14_08v81")]
-transform = Transform3D(0.77423793, 0, 0.63289446, 0, 1, 0, -0.63289446, 0, 0.77423793, 18.137093, 0.0068478584, 2.8153763)
-
-[node name="Trees" parent="Trees/Trees/Trees/Trees" unique_id=871089112 instance=ExtResource("14_08v81")]
-transform = Transform3D(0.77423817, 0, 0.6328947, 0, 1, 0, -0.6328947, 0, 0.77423817, 18.503302, -0.0911212, 2.4386063)
-
-[node name="Trees" parent="Trees/Trees/Trees/Trees/Trees" unique_id=490975462 instance=ExtResource("14_08v81")]
-transform = Transform3D(0.6134722, 0, -0.7897163, 0, 1, 0, 0.7897163, 0, 0.6134722, 21.89817, -0.0911212, -40.542824)
 
 [node name="Pine_12" parent="." unique_id=1638362113 instance=ExtResource("15_akghf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.275033, -9.536743e-07, 20.572699)
@@ -464,3 +503,37 @@ visible = false
 
 [node name="cabin" parent="." unique_id=1898868674 instance=ExtResource("22_reurv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.701777, 0.027175188, 13.520252)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1302611714]
+transform = Transform3D(0.9999939, 0, 0.0034907667, 0, 1, 0, 0.0034907667, 0, -0.9999939, 0, 500, 0)
+visible = false
+mesh = SubResource("CylinderMesh_l61nf")
+
+[node name="Trees" type="Node3D" parent="." unique_id=5805027]
+
+[node name="Trees" parent="Trees" unique_id=490975462 instance=ExtResource("14_08v81")]
+transform = Transform3D(-0.28088468, 0, -0.9597414, 0, 1, 0, 0.9597414, 0, -0.28088468, 12.007454, -0.15485287, 5.0447693)
+
+[node name="Trees2" parent="Trees" unique_id=871089112 instance=ExtResource("14_08v81")]
+transform = Transform3D(0.5856085, 0, -0.8105939, 0, 1, 0, 0.8105939, 0, 0.5856085, -33.680065, -0.06373167, 11.0364685)
+
+[node name="Trees3" parent="Trees" unique_id=560549007 instance=ExtResource("14_08v81")]
+transform = Transform3D(-0.059620142, 0, -0.9982208, 0, 1, 0, 0.9982208, 0, -0.059620142, -30.142628, 0.027389526, -7.2885227)
+
+[node name="Trees4" parent="Trees" unique_id=1381886998 instance=ExtResource("14_08v81")]
+transform = Transform3D(-0.67792875, 0, -0.73512733, 0, 1, 0, 0.73512733, 0, -0.67792875, -15.777311, 0.020541668, -18.71297)
+
+[node name="Trees5" parent="Trees" unique_id=756523687 instance=ExtResource("14_08v81")]
+transform = Transform3D(-0.6907184, 0, -0.7231238, 0, 1, 0, 0.7231238, 0, -0.6907184, -4.570297, 0.0136938095, -29.942581)
+
+[node name="Trees6" parent="Trees" unique_id=1054076433 instance=ExtResource("14_08v81")]
+transform = Transform3D(0.5701258, 0, -0.8215574, 0, 1, 0, 0.8215574, 0, 0.5701258, -5.9880066, 0.006845951, -32.932724)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=754439502]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8316278, 1.9727321, 8.293915)
+amount = 150
+amount_ratio = 0.605
+lifetime = 3.8
+randomness = 0.09
+process_material = SubResource("ParticleProcessMaterial_hpart")
+draw_pass_1 = SubResource("QuadMesh_5qacs")
