@@ -4155,7 +4155,7 @@ _subresources={
 "materials": {
 "character_texture": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://entities/player/character_texture.tres",
+"use_external/fallback_path": "res://entities/player/textures/character_texture.tres",
 "use_external/path": "uid://dpaymf7imm447"
 }
 },

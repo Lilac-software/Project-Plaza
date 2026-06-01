@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dd71e5xoqw8lo"
-path="res://.godot/imported/plastic-smudge-smoothness copy.jpg-8a77a04b108f11e3b6533da8ead9995b.ctex"
+path="res://.godot/imported/plastic-smudge-smoothness copy.jpg-2c9fa430d7a473319c8924c031d9b873.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/plastic-smudge-smoothness copy.jpg"
-dest_files=["res://.godot/imported/plastic-smudge-smoothness copy.jpg-8a77a04b108f11e3b6533da8ead9995b.ctex"]
+source_file="res://3D assets/models/textures/Chalet/plastic-smudge-smoothness copy.jpg"
+dest_files=["res://.godot/imported/plastic-smudge-smoothness copy.jpg-2c9fa430d7a473319c8924c031d9b873.ctex"]
 
 [params]
 

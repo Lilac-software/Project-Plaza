@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://y3hi5oxamrmp"
-path="res://.godot/imported/NORMAL_old silver.jpg-2fa8f1f0caf018c6193171f5b565113e.ctex"
+path="res://.godot/imported/NORMAL_old silver.jpg-bbb56673d69142875721ab0696921545.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/NORMAL_old silver.jpg"
-dest_files=["res://.godot/imported/NORMAL_old silver.jpg-2fa8f1f0caf018c6193171f5b565113e.ctex"]
+source_file="res://3D assets/models/textures/Chalet/NORMAL_old silver.jpg"
+dest_files=["res://.godot/imported/NORMAL_old silver.jpg-bbb56673d69142875721ab0696921545.ctex"]
 
 [params]
 

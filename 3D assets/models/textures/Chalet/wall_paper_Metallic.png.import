@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qrl8ocgudbsw"
-path="res://.godot/imported/wall_paper_Metallic.png-cd86a16bcf02209b4ddaa4ae3ccacf2f.ctex"
+path="res://.godot/imported/wall_paper_Metallic.png-fc0952064a3a3c9d426742c78fc9c853.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/wall_paper_Metallic.png"
-dest_files=["res://.godot/imported/wall_paper_Metallic.png-cd86a16bcf02209b4ddaa4ae3ccacf2f.ctex"]
+source_file="res://3D assets/models/textures/Chalet/wall_paper_Metallic.png"
+dest_files=["res://.godot/imported/wall_paper_Metallic.png-fc0952064a3a3c9d426742c78fc9c853.ctex"]
 
 [params]
 

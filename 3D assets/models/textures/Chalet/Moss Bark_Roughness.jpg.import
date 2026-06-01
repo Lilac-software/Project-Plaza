@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfmtuqc6jn7gk"
-path="res://.godot/imported/Moss Bark_Roughness.jpg-8e4de4ec009fad1c27cd0221d8c68407.ctex"
+path="res://.godot/imported/Moss Bark_Roughness.jpg-c121175337a3038d485416186ba1592a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/Moss Bark_Roughness.jpg"
-dest_files=["res://.godot/imported/Moss Bark_Roughness.jpg-8e4de4ec009fad1c27cd0221d8c68407.ctex"]
+source_file="res://3D assets/models/textures/Chalet/Moss Bark_Roughness.jpg"
+dest_files=["res://.godot/imported/Moss Bark_Roughness.jpg-c121175337a3038d485416186ba1592a.ctex"]
 
 [params]
 

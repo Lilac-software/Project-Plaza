@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vdxprukcq85"
-path="res://.godot/imported/Used Metal_roughness.jpg-aacdcbeb3dbf04a67de5d14804b4f0e0.ctex"
+path="res://.godot/imported/Used Metal_roughness.jpg-6dd607cdf25155a0e5014baf953ab17e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/Used Metal_roughness.jpg"
-dest_files=["res://.godot/imported/Used Metal_roughness.jpg-aacdcbeb3dbf04a67de5d14804b4f0e0.ctex"]
+source_file="res://3D assets/models/textures/Chalet/Used Metal_roughness.jpg"
+dest_files=["res://.godot/imported/Used Metal_roughness.jpg-6dd607cdf25155a0e5014baf953ab17e.ctex"]
 
 [params]
 

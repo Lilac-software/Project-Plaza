@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bso8b5nf6ihbg"
-path="res://.godot/imported/Moss Bark_Displacement.jpg-e3ba8678acf1d3d9b7fd8ead1d24aa74.ctex"
+path="res://.godot/imported/Moss Bark_Displacement.jpg-3aefa4df188b4558782c6192ad665209.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/Moss Bark_Displacement.jpg"
-dest_files=["res://.godot/imported/Moss Bark_Displacement.jpg-e3ba8678acf1d3d9b7fd8ead1d24aa74.ctex"]
+source_file="res://3D assets/models/textures/Chalet/Moss Bark_Displacement.jpg"
+dest_files=["res://.godot/imported/Moss Bark_Displacement.jpg-3aefa4df188b4558782c6192ad665209.ctex"]
 
 [params]
 

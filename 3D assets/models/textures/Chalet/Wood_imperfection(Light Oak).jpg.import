@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chtmxrrgkqn0"
-path="res://.godot/imported/Wood_imperfection(Light Oak).jpg-cace12df628e74f0a329276797234293.ctex"
+path="res://.godot/imported/Wood_imperfection(Light Oak).jpg-480380faace55c7b5e55fe0fdab48ada.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/Wood_imperfection(Light Oak).jpg"
-dest_files=["res://.godot/imported/Wood_imperfection(Light Oak).jpg-cace12df628e74f0a329276797234293.ctex"]
+source_file="res://3D assets/models/textures/Chalet/Wood_imperfection(Light Oak).jpg"
+dest_files=["res://.godot/imported/Wood_imperfection(Light Oak).jpg-480380faace55c7b5e55fe0fdab48ada.ctex"]
 
 [params]
 

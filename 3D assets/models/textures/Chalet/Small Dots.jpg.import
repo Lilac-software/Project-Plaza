@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b02wsy7pkkwxb"
-path="res://.godot/imported/Small Dots.jpg-1a44db0c7586964605686f50793853de.ctex"
+path="res://.godot/imported/Small Dots.jpg-9d26d824a1cd0c895611363c6e2df248.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/Small Dots.jpg"
-dest_files=["res://.godot/imported/Small Dots.jpg-1a44db0c7586964605686f50793853de.ctex"]
+source_file="res://3D assets/models/textures/Chalet/Small Dots.jpg"
+dest_files=["res://.godot/imported/Small Dots.jpg-9d26d824a1cd0c895611363c6e2df248.ctex"]
 
 [params]
 

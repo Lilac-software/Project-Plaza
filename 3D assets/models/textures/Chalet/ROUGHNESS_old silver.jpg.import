@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6cv63vcdwb4i"
-path="res://.godot/imported/ROUGHNESS_old silver.jpg-c592cd5c2e55fa088be24fc26d81e748.ctex"
+path="res://.godot/imported/ROUGHNESS_old silver.jpg-29cdeb8a6bbf49aaba0320491ef47a41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/ROUGHNESS_old silver.jpg"
-dest_files=["res://.godot/imported/ROUGHNESS_old silver.jpg-c592cd5c2e55fa088be24fc26d81e748.ctex"]
+source_file="res://3D assets/models/textures/Chalet/ROUGHNESS_old silver.jpg"
+dest_files=["res://.godot/imported/ROUGHNESS_old silver.jpg-29cdeb8a6bbf49aaba0320491ef47a41.ctex"]
 
 [params]
 

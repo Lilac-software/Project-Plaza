@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d14ydqirmbipa"
-path.s3tc="res://.godot/imported/Wood_Diffuse(Oak).jpg-30bcf9fb3582fbcc98dda8f3659ef7be.s3tc.ctex"
+path.s3tc="res://.godot/imported/Wood_Diffuse(Oak).jpg-aa79334862a40dc889dba8bc9784c856.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/Wood_Diffuse(Oak).jpg"
-dest_files=["res://.godot/imported/Wood_Diffuse(Oak).jpg-30bcf9fb3582fbcc98dda8f3659ef7be.s3tc.ctex"]
+source_file="res://3D assets/models/textures/Chalet/Wood_Diffuse(Oak).jpg"
+dest_files=["res://.godot/imported/Wood_Diffuse(Oak).jpg-aa79334862a40dc889dba8bc9784c856.s3tc.ctex"]
 
 [params]
 

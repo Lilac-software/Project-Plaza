@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3x72g61x1sdm"
-path="res://.godot/imported/plastic-texture-normal-3.jpg-2cbef568825c955f5269251a678c75fd.ctex"
+path="res://.godot/imported/plastic-texture-normal-3.jpg-30b40a81cad0c77704b4542c3d5d6505.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/plastic-texture-normal-3.jpg"
-dest_files=["res://.godot/imported/plastic-texture-normal-3.jpg-2cbef568825c955f5269251a678c75fd.ctex"]
+source_file="res://3D assets/models/textures/Chalet/plastic-texture-normal-3.jpg"
+dest_files=["res://.godot/imported/plastic-texture-normal-3.jpg-30b40a81cad0c77704b4542c3d5d6505.ctex"]
 
 [params]
 

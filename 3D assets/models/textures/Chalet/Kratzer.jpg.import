@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1muyaw4h6q3p"
-path="res://.godot/imported/Kratzer.jpg-5d3b196962995822d372b31ce371ec72.ctex"
+path="res://.godot/imported/Kratzer.jpg-334b25228b8195204fb2a9f3d4f4b6da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/Kratzer.jpg"
-dest_files=["res://.godot/imported/Kratzer.jpg-5d3b196962995822d372b31ce371ec72.ctex"]
+source_file="res://3D assets/models/textures/Chalet/Kratzer.jpg"
+dest_files=["res://.godot/imported/Kratzer.jpg-334b25228b8195204fb2a9f3d4f4b6da.ctex"]
 
 [params]
 

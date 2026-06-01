@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp4rxeme8p250"
-path="res://.godot/imported/Used Metal_basecolor.jpg-e1a46d861127cb62738711a4930fe4f0.ctex"
+path="res://.godot/imported/Used Metal_basecolor.jpg-36aea2675ce06eb4fa6c5d97b92a16a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/Used Metal_basecolor.jpg"
-dest_files=["res://.godot/imported/Used Metal_basecolor.jpg-e1a46d861127cb62738711a4930fe4f0.ctex"]
+source_file="res://3D assets/models/textures/Chalet/Used Metal_basecolor.jpg"
+dest_files=["res://.godot/imported/Used Metal_basecolor.jpg-36aea2675ce06eb4fa6c5d97b92a16a2.ctex"]
 
 [params]
 

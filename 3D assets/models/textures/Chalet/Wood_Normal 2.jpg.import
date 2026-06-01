@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bka5b7ln67t8l"
-path="res://.godot/imported/Wood_Normal 2.jpg-3281b6bc639b67c4d3593ff76f876f74.ctex"
+path="res://.godot/imported/Wood_Normal 2.jpg-41ad6fdbff53610ad966ef04e50c681c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/Wood_Normal 2.jpg"
-dest_files=["res://.godot/imported/Wood_Normal 2.jpg-3281b6bc639b67c4d3593ff76f876f74.ctex"]
+source_file="res://3D assets/models/textures/Chalet/Wood_Normal 2.jpg"
+dest_files=["res://.godot/imported/Wood_Normal 2.jpg-41ad6fdbff53610ad966ef04e50c681c.ctex"]
 
 [params]
 

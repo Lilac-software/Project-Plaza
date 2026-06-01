@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://glplvk445gic"
-path="res://.godot/imported/wall_paper_Roughness.png-4d7f4f8c6d4700424ea2386693961366.ctex"
+path="res://.godot/imported/wall_paper_Roughness.png-a31da2d9ddf3af87fc83728fa5c30a03.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/wall_paper_Roughness.png"
-dest_files=["res://.godot/imported/wall_paper_Roughness.png-4d7f4f8c6d4700424ea2386693961366.ctex"]
+source_file="res://3D assets/models/textures/Chalet/wall_paper_Roughness.png"
+dest_files=["res://.godot/imported/wall_paper_Roughness.png-a31da2d9ddf3af87fc83728fa5c30a03.ctex"]
 
 [params]
 

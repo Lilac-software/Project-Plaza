@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjx1k0pryvmfs"
-path="res://.godot/imported/Wood_imperfection2.jpg-9d463e380a1faf8f11bed26a01f2ab03.ctex"
+path="res://.godot/imported/Wood_imperfection2.jpg-81a0ad22852c13c8842d08f0fb9adad0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/Wood_imperfection2.jpg"
-dest_files=["res://.godot/imported/Wood_imperfection2.jpg-9d463e380a1faf8f11bed26a01f2ab03.ctex"]
+source_file="res://3D assets/models/textures/Chalet/Wood_imperfection2.jpg"
+dest_files=["res://.godot/imported/Wood_imperfection2.jpg-81a0ad22852c13c8842d08f0fb9adad0.ctex"]
 
 [params]
 

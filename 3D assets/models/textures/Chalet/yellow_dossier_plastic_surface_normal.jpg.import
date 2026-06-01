@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://j75urhb1ma7d"
-path="res://.godot/imported/yellow_dossier_plastic_surface_normal.jpg-0337f2ca3a40a532f90589bab8cb909c.ctex"
+path="res://.godot/imported/yellow_dossier_plastic_surface_normal.jpg-7fd9ef6e1887ecbc183b3e86679da604.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/yellow_dossier_plastic_surface_normal.jpg"
-dest_files=["res://.godot/imported/yellow_dossier_plastic_surface_normal.jpg-0337f2ca3a40a532f90589bab8cb909c.ctex"]
+source_file="res://3D assets/models/textures/Chalet/yellow_dossier_plastic_surface_normal.jpg"
+dest_files=["res://.godot/imported/yellow_dossier_plastic_surface_normal.jpg-7fd9ef6e1887ecbc183b3e86679da604.ctex"]
 
 [params]
 

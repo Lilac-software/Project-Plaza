@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djhh64kw6efpo"
-path="res://.godot/imported/Wood_Roughness2.jpg-3f097fefe8fc527341bdaa1935057ce1.ctex"
+path="res://.godot/imported/Wood_Roughness2.jpg-abba3b9474e2909c60aed3ed48923730.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/Wood_Roughness2.jpg"
-dest_files=["res://.godot/imported/Wood_Roughness2.jpg-3f097fefe8fc527341bdaa1935057ce1.ctex"]
+source_file="res://3D assets/models/textures/Chalet/Wood_Roughness2.jpg"
+dest_files=["res://.godot/imported/Wood_Roughness2.jpg-abba3b9474e2909c60aed3ed48923730.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cltwx6ce486je"
-path.s3tc="res://.godot/imported/wall_paper_BaseColor.png-3e0053ea9291688da38be3c64b0adb14.s3tc.ctex"
+path.s3tc="res://.godot/imported/wall_paper_BaseColor.png-b079b3e97db8c57350fe768e32fda9c7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://3D assets/models/Chalet/V1/textures/wall_paper_BaseColor.png"
-dest_files=["res://.godot/imported/wall_paper_BaseColor.png-3e0053ea9291688da38be3c64b0adb14.s3tc.ctex"]
+source_file="res://3D assets/models/textures/Chalet/wall_paper_BaseColor.png"
+dest_files=["res://.godot/imported/wall_paper_BaseColor.png-b079b3e97db8c57350fe768e32fda9c7.s3tc.ctex"]
 
 [params]
 

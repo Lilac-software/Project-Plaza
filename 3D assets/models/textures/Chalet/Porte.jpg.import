@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doal38cpuvyyp"
-path="res://.godot/imported/Moss Bark_Normal.jpg-089561ab44fa33c2ca347dbe04c57b60.ctex"
+uid="uid://31imsnvcmhdk"
+path="res://.godot/imported/Porte.jpg-92fb7fa305be14053238917c11c37b43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://3D assets/models/textures/Chalet/Moss Bark_Normal.jpg"
-dest_files=["res://.godot/imported/Moss Bark_Normal.jpg-089561ab44fa33c2ca347dbe04c57b60.ctex"]
+source_file="res://3D assets/models/textures/Chalet/Porte.jpg"
+dest_files=["res://.godot/imported/Porte.jpg-92fb7fa305be14053238917c11c37b43.ctex"]
 
 [params]
 
