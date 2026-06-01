@@ -11,7 +11,7 @@
 [ext_resource type="Script" uid="uid://ebjrmosa0k2y" path="res://entities/player/camera/fixedcam.gd" id="9_ovvcw"]
 [ext_resource type="PackedScene" uid="uid://dk4gvrs06rduo" path="res://entities/NPC/test_npc.tscn" id="10_v1wfb"]
 [ext_resource type="Script" uid="uid://bm4lpujj3dcdq" path="res://entities/player/camera/camera.gd" id="11_b4wg8"]
-[ext_resource type="Environment" uid="uid://bgqgepjck3nr7" path="res://shaders/world_environment/world.tres" id="12_yt4x1"]
+[ext_resource type="Environment" uid="uid://b6pfxvajpliwh" path="res://shaders/world_environment/worldcopy.tres" id="12_hpart"]
 [ext_resource type="PackedScene" uid="uid://dv5p3wmxj5hja" path="res://ui/main_ui.tscn" id="13_dklay"]
 [ext_resource type="PackedScene" uid="uid://u3pak6levfbk" path="res://placeholders/psx_trees/Trees.fbx" id="14_08v81"]
 [ext_resource type="PackedScene" uid="uid://dwktl6urmp84s" path="res://placeholders/stylized_nature_megapack/glTF/Pine_1.gltf" id="15_akghf"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://dof8s33ygvdsh" path="res://placeholders/stylized_nature_megapack/glTF/CommonTree_4.gltf" id="21_bhnpu"]
 [ext_resource type="PackedScene" uid="uid://dfh6hw0ph06fw" path="res://objects/buildings/cabin.glb" id="22_reurv"]
 [ext_resource type="PackedScene" uid="uid://rt4b8c2e1b6c" path="res://objects/buildings/Chalet/chalet.tscn" id="23_hpart"]
+[ext_resource type="PackedScene" uid="uid://dpeko0ub55dus" path="res://objects/buildings/greenhouse/greenhouse.glb" id="24_l8bgr"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_hw62u"]
 
@@ -257,7 +258,7 @@ spot_angle = 61.58
 spot_angle_attenuation = 1.0352651
 
 [node name="fountain" parent="World" unique_id=1945871533 instance=ExtResource("2_2xj5f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.79413, 4.76837e-07, 8.03297)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.79413, 4.76837e-07, 3.1142254)
 
 [node name="town" parent="World" unique_id=165391946 instance=ExtResource("3_kf4tr")]
 
@@ -400,7 +401,7 @@ directional_shadow_blend_splits = true
 directional_shadow_max_distance = 170.7
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1399300997]
-environment = ExtResource("12_yt4x1")
+environment = ExtResource("12_hpart")
 
 [node name="ReflectiveSphere" type="MeshInstance3D" parent="." unique_id=251834357]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2655456, 2.35334, 5.56318)
@@ -467,4 +468,7 @@ visible = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.701777, 0.027175188, 13.520252)
 
 [node name="chalet" parent="." unique_id=1913971421 instance=ExtResource("23_hpart")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.039116, 16.31957, 5.642582)
+transform = Transform3D(-1.0053619e-08, 0, -0.23, 0, 0.23, 0, 0.23, 0, -1.0053619e-08, 6.971496, -0.11210561, 15.415184)
+
+[node name="greenhouse" parent="." unique_id=376249298 instance=ExtResource("24_l8bgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6458716, -0.008012265, 15.932515)

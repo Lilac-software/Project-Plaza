@@ -7,3 +7,5 @@ resource_name = "character_texture"
 cull_mode = 2
 albedo_texture = ExtResource("1_7kxiv")
 texture_filter = 2
+distance_fade_mode = 2
+distance_fade_max_distance = 0.0

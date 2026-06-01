@@ -1,0 +1,46 @@
+[gd_resource type="Environment" format=3 uid="uid://b6pfxvajpliwh"]
+
+[ext_resource type="Texture2D" uid="uid://bomgx76dh3fl1" path="res://placeholders/skyboxtest.jpg" id="1_do105"]
+
+[sub_resource type="Gradient" id="Gradient_dbpwn"]
+offsets = PackedFloat32Array(0, 0.21666667, 0.882023, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.0984, 0.084, 0.12, 1, 1, 0.992, 0.88, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_mu5wb"]
+gradient = SubResource("Gradient_dbpwn")
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_ydvd6"]
+panorama = ExtResource("1_do105")
+energy_multiplier = 0.8
+
+[sub_resource type="Sky" id="Sky_s6s3b"]
+sky_material = SubResource("PanoramaSkyMaterial_ydvd6")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_s6s3b")
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_sky_contribution = 0.19
+tonemap_mode = 1
+tonemap_exposure = 1.16
+tonemap_agx_contrast = 1.85
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_energy = 6.27
+glow_enabled = true
+glow_bloom = 0.25
+fog_light_energy = 1.41
+fog_density = 0.005
+fog_height = 2.0
+fog_height_density = 0.547
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0061
+volumetric_fog_albedo = Color(0.79, 0.895, 1, 1)
+volumetric_fog_emission = Color(0.66, 0.66, 0.66, 1)
+volumetric_fog_emission_energy = 0.1
+volumetric_fog_ambient_inject = 0.12
+volumetric_fog_sky_affect = 0.053
+volumetric_fog_temporal_reprojection_enabled = false
+adjustment_enabled = true
+adjustment_color_correction = SubResource("GradientTexture1D_mu5wb")
