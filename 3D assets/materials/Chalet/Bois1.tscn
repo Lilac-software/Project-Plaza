@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://v8q1g2d0hfpn"]
+
+[ext_resource type="PackedScene" uid="uid://b3ooomq7gg6gg" path="res://3D assets/models/Chalet/V1/chalet.blend" id="1_oush2"]
+[ext_resource type="Shader" uid="uid://bh3iljkpohyuq" path="res://3D assets/materials/Chalet/Bois1.gdshader" id="2_oush2"]
+[ext_resource type="Texture2D" uid="uid://s0hbqjo8ugy7" path="res://3D assets/models/Chalet/V1/textures/test.jpg" id="3_5m7kn"]
+
+[sub_resource type="Gradient" id="Gradient_sbjf4"]
+offsets = PackedFloat32Array(0, 0.21052632)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_dn6jr"]
+gradient = SubResource("Gradient_sbjf4")
+use_hdr = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5m7kn"]
+render_priority = 0
+shader = ExtResource("2_oush2")
+shader_parameter/base_texture = ExtResource("3_5m7kn")
+shader_parameter/color_ramp = SubResource("GradientTexture1D_dn6jr")
+shader_parameter/brightness = 0.30000006175000005
+shader_parameter/contrast = 0.6000000285
+shader_parameter/mix_color = Color(1, 1, 1, 1)
+
+[node name="chalet" unique_id=312172592 instance=ExtResource("1_oush2")]
+
+[node name="Cylinder" parent="." index="0" unique_id=1116554746]
+surface_material_override/0 = SubResource("ShaderMaterial_5m7kn")
+
+[node name="Sun" parent="." index="175" unique_id=2020144315]
+transform = Transform3D(0.73943925, -0.6474409, -0.18452552, 0.5640971, 0.44624797, 0.6947351, -0.36745584, -0.6178047, 0.695193, 0, 31.50261, 0)

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cxx4atjhvqrld"]
+
+[ext_resource type="PackedScene" uid="uid://b3ooomq7gg6gg" path="res://3D assets/models/Chalet/V1/chalet.blend" id="1_mevsv"]
+
+[node name="Node3D" type="Node3D" unique_id=632379502]
+
+[node name="chalet" parent="." unique_id=361492875 instance=ExtResource("1_mevsv")]
