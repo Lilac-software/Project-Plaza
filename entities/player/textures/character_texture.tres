@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dpaymf7imm447"]
+
+[ext_resource type="Texture2D" uid="uid://bt63fn4j080sd" path="res://entities/player/textures/character_texture.png" id="1_7kxiv"]
+
+[resource]
+resource_name = "character_texture"
+cull_mode = 2
+albedo_texture = ExtResource("1_7kxiv")
+texture_filter = 2

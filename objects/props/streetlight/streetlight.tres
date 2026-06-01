@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bsymyx1atl36o"]
+
+[ext_resource type="Texture2D" uid="uid://dtu2lnw2c0dfx" path="res://objects/props/streetlight/streetlight_texture.png" id="1_xb866"]
+
+[resource]
+albedo_texture = ExtResource("1_xb866")

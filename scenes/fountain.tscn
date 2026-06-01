@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bj7df6ppdmao1"]
-
-[ext_resource type="PackedScene" uid="uid://da7xgegwil37d" path="res://3D assets/models/fountain.blend" id="1_cxdhm"]
-
-[node name="fountain" instance=ExtResource("1_cxdhm")]

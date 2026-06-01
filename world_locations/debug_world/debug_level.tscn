@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ctpjvg3wb8taw"]
+
+[ext_resource type="PackedScene" uid="uid://v3n1jj1v7lb7" path="res://objects/buildings/grayboxtest.tscn" id="1_6or15"]
+[ext_resource type="PackedScene" uid="uid://csm6quk0q2h7h" path="res://entities/player/player.tscn" id="2_8d50e"]
+
+[sub_resource type="Environment" id="Environment_6or15"]
+background_mode = 1
+background_color = Color(0.4655, 0.60277504, 0.95, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.6
+
+[node name="DebugLevel" type="Node" unique_id=1118683443]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1457006166]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25000003, 0.4215879, -0.36356273, 0.83071405, -0.2688191, 0.8248164, 0.4974075, 0, 5.741481, 0)
+
+[node name="grayboxtest" parent="." unique_id=1569637645 instance=ExtResource("1_6or15")]
+
+[node name="Player" parent="." unique_id=1556047462 instance=ExtResource("2_8d50e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7228315, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1333963936]
+environment = SubResource("Environment_6or15")
