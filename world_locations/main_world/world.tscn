@@ -22,7 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://dpfwwaspj3r4q" path="res://placeholders/stylized_nature_megapack/glTF/CommonTree_2.gltf" id="20_6okgs"]
 [ext_resource type="PackedScene" uid="uid://dof8s33ygvdsh" path="res://placeholders/stylized_nature_megapack/glTF/CommonTree_4.gltf" id="21_bhnpu"]
 [ext_resource type="PackedScene" uid="uid://dfh6hw0ph06fw" path="res://objects/buildings/cabin.glb" id="22_reurv"]
-[ext_resource type="PackedScene" uid="uid://rt4b8c2e1b6c" path="res://objects/buildings/chalet.tscn" id="23_hpart"]
+[ext_resource type="PackedScene" uid="uid://rt4b8c2e1b6c" path="res://objects/buildings/Chalet/chalet.tscn" id="23_hpart"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_hw62u"]
 
