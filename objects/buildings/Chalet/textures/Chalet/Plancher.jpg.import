@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bomgx76dh3fl1"
-path.s3tc="res://.godot/imported/skyboxtest.jpg-6e6bd8b6c24061458d82dd9e3eef5608.s3tc.ctex"
+uid="uid://8gv1vq8tvgjb"
+path.s3tc="res://.godot/imported/Plancher.jpg-55e3eee6e6e6afa8bca6537046b503ab.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://placeholders/skyboxtest.jpg"
-dest_files=["res://.godot/imported/skyboxtest.jpg-6e6bd8b6c24061458d82dd9e3eef5608.s3tc.ctex"]
+source_file="res://objects/buildings/Chalet/textures/Chalet/Plancher.jpg"
+dest_files=["res://.godot/imported/Plancher.jpg-55e3eee6e6e6afa8bca6537046b503ab.s3tc.ctex"]
 
 [params]
 

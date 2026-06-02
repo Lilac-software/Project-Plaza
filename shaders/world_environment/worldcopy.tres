@@ -1,6 +1,6 @@
 [gd_resource type="Environment" format=3 uid="uid://b6pfxvajpliwh"]
 
-[ext_resource type="Texture2D" uid="uid://6i50t61ene1" path="res://placeholders/skyboxtest.jpg" id="1_do105"]
+[ext_resource type="Texture2D" uid="uid://bomgx76dh3fl1" path="res://placeholders/skyboxtest.jpg" id="1_do105"]
 
 [sub_resource type="Gradient" id="Gradient_dbpwn"]
 offsets = PackedFloat32Array(0, 0.21666667, 0.882023, 1)
