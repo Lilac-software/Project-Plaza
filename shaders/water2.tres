@@ -144,7 +144,7 @@ input_name = "vertex"
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_23c3a"]
 noise_type = 3
-frequency = 0.009
+frequency = 0.0142
 offset = Vector3(628.57, 0, 0)
 fractal_octaves = 2
 

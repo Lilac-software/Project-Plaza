@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bx7gs0qhistdm"
-path.s3tc="res://.godot/imported/Branch_6.png-58b418e7a5ed3c137b9db5e70d0fef9f.s3tc.ctex"
+uid="uid://br80i51c5whtc"
+path.s3tc="res://.godot/imported/AllSkyFree_Sky_EpicBlueSunset_Equirect.png-d060241f4ff3530166310391098120c9.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,14 +11,14 @@ metadata={
 
 [deps]
 
-source_file="res://placeholders/psx_trees/Branch_6.png"
-dest_files=["res://.godot/imported/Branch_6.png-58b418e7a5ed3c137b9db5e70d0fef9f.s3tc.ctex"]
+source_file="res://placeholders/AllSkyFree_Sky_EpicBlueSunset_Equirect.png"
+dest_files=["res://.godot/imported/AllSkyFree_Sky_EpicBlueSunset_Equirect.png-d060241f4ff3530166310391098120c9.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
 compress/high_quality=false
-compress/lossy_quality=0.7
+compress/lossy_quality=0.0
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
