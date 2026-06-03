@@ -8,7 +8,7 @@ func _input(event: InputEvent) -> void:
 
 func use_dialogue():
 	var dialogue_box = $"../DialogueBox"
-	if dialogue_box:
+	if dialogue_box.dialogue_id == 0:
 		dialogue_box.start()
 
 # Called when the node enters the scene tree for the first time.
