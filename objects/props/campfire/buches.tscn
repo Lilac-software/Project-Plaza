@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cm8mfk5r4u2uf"]
+
+[ext_resource type="PackedScene" uid="uid://dh78xm3txb8p3" path="res://objects/props/campfire/Buches.glb" id="1_hk6c0"]
+[ext_resource type="Material" uid="uid://lg2son8bb35i" path="res://shaders/WoodBuches.tres" id="2_e58dr"]
+
+[node name="Buches" unique_id=686646211 instance=ExtResource("1_hk6c0")]
+
+[node name="Cylinder" parent="." index="0" unique_id=820636463]
+surface_material_override/0 = ExtResource("2_e58dr")
+
+[node name="Cylinder_001" parent="." index="1" unique_id=389527821]
+surface_material_override/0 = ExtResource("2_e58dr")
+
+[node name="Cylinder_002" parent="." index="2" unique_id=1405606383]
+surface_material_override/0 = ExtResource("2_e58dr")
+
+[node name="Cylinder_003" parent="." index="3" unique_id=1480723092]
+surface_material_override/0 = ExtResource("2_e58dr")
+
+[node name="Cylinder_004" parent="." index="4" unique_id=1754723328]
+surface_material_override/0 = ExtResource("2_e58dr")
+
+[node name="Cylinder_005" parent="." index="5" unique_id=615578672]
+surface_material_override/0 = ExtResource("2_e58dr")
+
+[node name="Cylinder_006" parent="." index="6" unique_id=678042843]
+surface_material_override/0 = ExtResource("2_e58dr")
+
+[node name="Cylinder_007" parent="." index="7" unique_id=1499925692]
+surface_material_override/0 = ExtResource("2_e58dr")
