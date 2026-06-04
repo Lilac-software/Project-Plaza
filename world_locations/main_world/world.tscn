@@ -11,7 +11,7 @@
 [ext_resource type="Script" uid="uid://ebjrmosa0k2y" path="res://entities/player/camera/fixedcam.gd" id="9_ovvcw"]
 [ext_resource type="PackedScene" uid="uid://dk4gvrs06rduo" path="res://entities/NPC/test_npc.tscn" id="10_v1wfb"]
 [ext_resource type="Script" uid="uid://bm4lpujj3dcdq" path="res://entities/player/camera/camera.gd" id="11_b4wg8"]
-[ext_resource type="Environment" uid="uid://bgqgepjck3nr7" path="res://shaders/world_environment/world.tres" id="12_yt4x1"]
+[ext_resource type="Environment" uid="uid://b6pfxvajpliwh" path="res://shaders/world_environment/worldcopy.tres" id="12_hpart"]
 [ext_resource type="PackedScene" uid="uid://dv5p3wmxj5hja" path="res://ui/main_ui.tscn" id="13_dklay"]
 [ext_resource type="PackedScene" uid="uid://u3pak6levfbk" path="res://placeholders/psx_trees/Trees.fbx" id="14_08v81"]
 [ext_resource type="PackedScene" uid="uid://dwktl6urmp84s" path="res://placeholders/stylized_nature_megapack/glTF/Pine_1.gltf" id="15_akghf"]
@@ -22,8 +22,16 @@
 [ext_resource type="PackedScene" uid="uid://dpfwwaspj3r4q" path="res://placeholders/stylized_nature_megapack/glTF/CommonTree_2.gltf" id="20_6okgs"]
 [ext_resource type="PackedScene" uid="uid://dof8s33ygvdsh" path="res://placeholders/stylized_nature_megapack/glTF/CommonTree_4.gltf" id="21_bhnpu"]
 [ext_resource type="PackedScene" uid="uid://dfh6hw0ph06fw" path="res://objects/buildings/cabin.glb" id="22_reurv"]
+
 [ext_resource type="PackedScene" uid="uid://clnwesjnvuqgo" path="res://objects/buildings/Chalet/chalet.tscn" id="23_hpart"]
 [ext_resource type="PackedScene" uid="uid://cm8mfk5r4u2uf" path="res://objects/props/campfire/buches.tscn" id="24_l8bgr"]
+
+
+[ext_resource type="PackedScene" uid="uid://dpeko0ub55dus" path="res://objects/buildings/greenhouse/greenhouse.glb" id="24_l8bgr"]
+[ext_resource type="PackedScene" uid="uid://pv1sve876viw" path="res://objects/props/rocks/rock_1.glb" id="25_l61nf"]
+[ext_resource type="PackedScene" uid="uid://ckg6fvuyht6j7" path="res://objects/props/rocks/rock_2.glb" id="26_e2t8g"]
+[ext_resource type="PackedScene" uid="uid://dcqmnlec42a0p" path="res://objects/props/rocks/rock_3.glb" id="27_5qacs"]
+
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_hw62u"]
 
@@ -180,6 +188,50 @@ rings = 0
 metallic = 1.0
 roughness = 0.1
 
+[sub_resource type="Curve" id="Curve_l8bgr"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.51101327, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_l61nf"]
+curve = SubResource("Curve_l8bgr")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_e2t8g"]
+lifetime_randomness = 0.62
+emission_shape_scale = Vector3(6.195, 1.79, 7.36)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1.13, 1.415)
+gravity = Vector3(-0.045, -0.175, -0.105)
+alpha_curve = SubResource("CurveTexture_l61nf")
+turbulence_enabled = true
+turbulence_noise_strength = 0.01
+turbulence_noise_scale = 300.0
+turbulence_influence_min = 0.064
+turbulence_influence_max = 0.064
+
+[sub_resource type="Gradient" id="Gradient_5qacs"]
+offsets = PackedFloat32Array(0.21463415, 0.36585367)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_64m2f"]
+gradient = SubResource("Gradient_5qacs")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.9230769, 0.508547)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4u1fr"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("GradientTexture2D_64m2f")
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_afd8q"]
+material = SubResource("StandardMaterial3D_4u1fr")
+size = Vector2(0.1, 0.1)
+
 [node name="Main" type="Node3D" unique_id=1833213351]
 
 [node name="World" type="Node3D" parent="." unique_id=1657534057]
@@ -217,7 +269,7 @@ skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_w335p")
 
 [node name="Grass" type="MeshInstance3D" parent="World" unique_id=1358736048]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.071006775, -0.010001907, 0.011057854)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.105612755, -0.01, -0.0060043335)
 mesh = SubResource("PlaneMesh_5m2ck")
 skeleton = NodePath("../..")
 
@@ -258,7 +310,7 @@ spot_angle = 61.58
 spot_angle_attenuation = 1.0352651
 
 [node name="fountain" parent="World" unique_id=1945871533 instance=ExtResource("2_2xj5f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.79413, 4.76837e-07, 8.03297)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.79413, 4.76837e-07, 3.1142254)
 
 [node name="town" parent="World" unique_id=165391946 instance=ExtResource("3_kf4tr")]
 
@@ -323,6 +375,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.93316, 0.0170522, 0.177497
 
 [node name="Water" type="MeshInstance3D" parent="World" unique_id=1446676110]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 21.363121, -1.4872972, 132.29713)
+visible = false
 sorting_offset = 32.96
 mesh = SubResource("PlaneMesh_q5onr")
 skeleton = NodePath("../..")
@@ -385,7 +438,6 @@ player = NodePath("../Characters/Player")
 transform = Transform3D(0.91933465, 0.3902334, 0.050413888, -0.21796401, 0.39839268, 0.8909406, 0.32759023, -0.8300609, 0.45131317, -8.66388, 8.07602, 0)
 light_volumetric_fog_energy = 0.458
 shadow_enabled = true
-shadow_bias = 0.0
 shadow_blur = 1.864
 directional_shadow_blend_splits = true
 directional_shadow_max_distance = 54.3
@@ -401,7 +453,7 @@ directional_shadow_blend_splits = true
 directional_shadow_max_distance = 170.7
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1399300997]
-environment = ExtResource("12_yt4x1")
+environment = ExtResource("12_hpart")
 
 [node name="ReflectiveSphere" type="MeshInstance3D" parent="." unique_id=251834357]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2655456, 2.35334, 5.56318)
@@ -423,7 +475,7 @@ transform = Transform3D(0.999846, 0, 0.01753959, 0, 1, 0, -0.01753959, 0, 0.9998
 transform = Transform3D(0.77423793, 0, 0.63289446, 0, 1, 0, -0.63289446, 0, 0.77423793, 18.137093, 0.0068478584, 2.8153763)
 
 [node name="Trees" parent="Trees/Trees/Trees/Trees" unique_id=871089112 instance=ExtResource("14_08v81")]
-transform = Transform3D(0.77423817, 0, 0.6328947, 0, 1, 0, -0.6328947, 0, 0.77423817, 18.503302, -0.0911212, 2.4386063)
+transform = Transform3D(0.77423817, 0, 0.63289475, 0, 1, 0, -0.63289475, 0, 0.77423817, 18.498228, -0.07931805, 2.436676)
 
 [node name="Trees" parent="Trees/Trees/Trees/Trees/Trees" unique_id=490975462 instance=ExtResource("14_08v81")]
 transform = Transform3D(0.6134722, 0, -0.7897163, 0, 1, 0, 0.7897163, 0, 0.6134722, 21.89817, -0.0911212, -40.542824)
@@ -467,8 +519,32 @@ visible = false
 [node name="cabin" parent="." unique_id=1898868674 instance=ExtResource("22_reurv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.701777, 0.027175188, 13.520252)
 
+
 [node name="Chalet" parent="." unique_id=44043897 instance=ExtResource("23_hpart")]
 transform = Transform3D(0.9999789, -0.0064925794, 0, 0.0064925794, 0.9999789, 0, 0, 0, 1, 0, 19.284214, 25.005142)
 
 [node name="Buches" parent="." unique_id=686646211 instance=ExtResource("24_l8bgr")]
 transform = Transform3D(10.995, 0, 0, 0, 10.995, 0, 0, 0, 10.995, 0, 16.16443, -8.176697)
+
+
+[node name="greenhouse" parent="." unique_id=376249298 instance=ExtResource("24_l8bgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6458716, -0.008012265, 15.932515)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=757185112]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6160865, 2.7766004, 10.591731)
+visible = false
+amount = 1133
+amount_ratio = 0.505
+lifetime = 4.1
+process_material = SubResource("ParticleProcessMaterial_e2t8g")
+draw_pass_1 = SubResource("QuadMesh_afd8q")
+
+[node name="rock_1" parent="." unique_id=1563931761 instance=ExtResource("25_l61nf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.400341, -0.023199737, 21.133123)
+
+[node name="rock_2" parent="." unique_id=1381670580 instance=ExtResource("26_e2t8g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7083864, -0.021057753, 19.599188)
+
+[node name="rock_3" parent="." unique_id=663781979 instance=ExtResource("27_5qacs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.169957, 0.0060884887, 22.009575)
+
