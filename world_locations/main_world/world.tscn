@@ -22,11 +22,16 @@
 [ext_resource type="PackedScene" uid="uid://dpfwwaspj3r4q" path="res://placeholders/stylized_nature_megapack/glTF/CommonTree_2.gltf" id="20_6okgs"]
 [ext_resource type="PackedScene" uid="uid://dof8s33ygvdsh" path="res://placeholders/stylized_nature_megapack/glTF/CommonTree_4.gltf" id="21_bhnpu"]
 [ext_resource type="PackedScene" uid="uid://dfh6hw0ph06fw" path="res://objects/buildings/cabin.glb" id="22_reurv"]
-[ext_resource type="PackedScene" uid="uid://rt4b8c2e1b6c" path="res://objects/buildings/Chalet/chalet.tscn" id="23_hpart"]
+
+[ext_resource type="PackedScene" uid="uid://clnwesjnvuqgo" path="res://objects/buildings/Chalet/chalet.tscn" id="23_hpart"]
+[ext_resource type="PackedScene" uid="uid://cm8mfk5r4u2uf" path="res://objects/props/campfire/buches.tscn" id="24_l8bgr"]
+
+
 [ext_resource type="PackedScene" uid="uid://dpeko0ub55dus" path="res://objects/buildings/greenhouse/greenhouse.glb" id="24_l8bgr"]
 [ext_resource type="PackedScene" uid="uid://pv1sve876viw" path="res://objects/props/rocks/rock_1.glb" id="25_l61nf"]
 [ext_resource type="PackedScene" uid="uid://ckg6fvuyht6j7" path="res://objects/props/rocks/rock_2.glb" id="26_e2t8g"]
 [ext_resource type="PackedScene" uid="uid://dcqmnlec42a0p" path="res://objects/props/rocks/rock_3.glb" id="27_5qacs"]
+
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_hw62u"]
 
@@ -514,8 +519,13 @@ visible = false
 [node name="cabin" parent="." unique_id=1898868674 instance=ExtResource("22_reurv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.701777, 0.027175188, 13.520252)
 
-[node name="chalet" parent="." unique_id=1913971421 instance=ExtResource("23_hpart")]
-transform = Transform3D(-1.0053619e-08, 0, -0.23, 0, 0.23, 0, 0.23, 0, -1.0053619e-08, 6.971496, -0.11210561, 15.415184)
+
+[node name="Chalet" parent="." unique_id=44043897 instance=ExtResource("23_hpart")]
+transform = Transform3D(0.9999789, -0.0064925794, 0, 0.0064925794, 0.9999789, 0, 0, 0, 1, 0, 19.284214, 25.005142)
+
+[node name="Buches" parent="." unique_id=686646211 instance=ExtResource("24_l8bgr")]
+transform = Transform3D(10.995, 0, 0, 0, 10.995, 0, 0, 0, 10.995, 0, 16.16443, -8.176697)
+
 
 [node name="greenhouse" parent="." unique_id=376249298 instance=ExtResource("24_l8bgr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6458716, -0.008012265, 15.932515)
@@ -537,3 +547,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7083864, -0.021057753, 19.
 
 [node name="rock_3" parent="." unique_id=663781979 instance=ExtResource("27_5qacs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.169957, 0.0060884887, 22.009575)
+

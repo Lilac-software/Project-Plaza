@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://ch2jtluejnm27"]
+
+[ext_resource type="Shader" uid="uid://ddipb8ovemhl8" path="res://objects/props/campfire/Fire.tres" id="1_ms8o1"]
+[ext_resource type="ArrayMesh" uid="uid://cp53pcwv4hspi" path="res://objects/props/campfire/PlanesFire.obj" id="2_pb5tm"]
+[ext_resource type="Shader" uid="uid://ctpvjaidcp044" path="res://shaders/ParticuleFire.tres" id="3_g0g5e"]
+
+[sub_resource type="Environment" id="Environment_pm58a"]
+glow_enabled = true
+glow_intensity = 2.46
+glow_strength = 1.08
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_amllx"]
+render_priority = 0
+shader = ExtResource("1_ms8o1")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ggubm"]
+render_priority = 0
+shader = ExtResource("3_g0g5e")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_dl3ll"]
+emission_shape = 1
+emission_sphere_radius = 0.45
+angle_min = -454.19998
+angle_max = 11.100011
+angular_velocity_min = -265.85
+angular_velocity_max = 232.61998
+gravity = Vector3(0, 5, 0)
+damping_min = 1.5000001
+damping_max = 2.2
+scale_min = 0.0
+scale_max = 0.19999999
+color = Color(1, 0.43392956, 0, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_amllx"]
+
+[node name="Node3D" type="Node3D" unique_id=532188864]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=165448165]
+environment = SubResource("Environment_pm58a")
+
+[node name="CPUParticles3D" type="CPUParticles3D" parent="." unique_id=1007708792]
+layers = 2
+material_override = SubResource("ShaderMaterial_amllx")
+mesh = ExtResource("2_pb5tm")
+gravity = Vector3(0, 0, 0)
+color = Color(1, 0.08880389, 0, 1)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=607179591]
+material_override = SubResource("ShaderMaterial_ggubm")
+amount = 15
+lifetime = 1.6
+randomness = 0.1
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_dl3ll")
+draw_pass_1 = SubResource("QuadMesh_amllx")

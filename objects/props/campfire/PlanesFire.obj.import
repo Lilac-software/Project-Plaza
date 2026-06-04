@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cp53pcwv4hspi"
+path="res://.godot/imported/PlanesFire.obj-bbec259d4c63d1b6c7ac3da7b43e3029.mesh"
+
+[deps]
+
+files=["res://.godot/imported/PlanesFire.obj-bbec259d4c63d1b6c7ac3da7b43e3029.mesh"]
+
+source_file="res://objects/props/campfire/PlanesFire.obj"
+dest_files=["res://.godot/imported/PlanesFire.obj-bbec259d4c63d1b6c7ac3da7b43e3029.mesh", "res://.godot/imported/PlanesFire.obj-bbec259d4c63d1b6c7ac3da7b43e3029.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
