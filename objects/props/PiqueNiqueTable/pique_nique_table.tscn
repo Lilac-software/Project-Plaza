@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ddh8xdjwe6o6j"]
+
+[ext_resource type="PackedScene" uid="uid://bg755kgkbmopn" path="res://objects/props/PiqueNiqueTable/PiqueNiqueTable.glb" id="1_b0lg6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f30ej"]
+albedo_color = Color(0.51953125, 0.2975423, 0, 1)
+
+[node name="PiqueNiqueTable" unique_id=1166089484 instance=ExtResource("1_b0lg6")]
+
+[node name="Table" parent="." index="0" unique_id=201500907]
+surface_material_override/0 = SubResource("StandardMaterial3D_f30ej")
